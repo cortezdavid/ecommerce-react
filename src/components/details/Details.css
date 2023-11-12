@@ -1,0 +1,125 @@
+.detailsCard {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: transform 0.3s ease;
+}
+
+.detailsCardBody {
+    display: flex;
+    height: 500px;
+}
+
+.detailImg,
+.detailDescription {
+    width: 50%;
+}
+
+.detailImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detailImg img {
+    width: 50%;
+}
+
+.detailDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.description {
+    font-size: 18px;
+    margin: 25px 0;
+}
+
+.detailsCardFooter {
+    display: flex;
+    align-items: center;
+}
+
+.detailsCardFooter span {
+    font-weight: 700;
+    font-size: 30px;
+    margin-right: 20px;
+
+}
+
+.btnCart {
+    display: flex;
+    align-items: center;
+    background: #4CAF50;
+}
+
+.btnCart,
+.btnCart span {
+    transition: 400ms;
+}
+
+.btnCart .text {
+    transform: translateX(15px);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btnCart .icon {
+    position: absolute;
+    transform: translateX(90px);
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnCart svg {
+    color: #eee;
+}
+
+.btnCart:hover {
+    background: #17811a;
+}
+
+.btnCart:hover .text {
+    color: transparent;
+}
+
+.btnCart:hover .icon {
+    width: 150px;
+    transform: translateX(0);
+}
+
+.btnCart:active .icon svg {
+    transform: scale(0.8);
+}
+.cardStar {
+    display: flex;
+    align-items: baseline;
+}
+
+.cardStar p {
+    font-size: 18px;
+}
+
+.cardStar>.rating {
+    font-size: 1.5em;
+    color: #faab00;
+    font-weight: bold;
+    position: relative;
+}
+
+.cardStar>.rating:before {
+    content: "☆☆☆☆☆";
+}
+
+.cardStar>.rating:after {
+    content: "★★★★★";
+    position: absolute;
+    left: 0;
+    width: calc(var(--rating) * 20%);
+    overflow: hidden;
+}

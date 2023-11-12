@@ -1,0 +1,41 @@
+.card {
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.image {
+    background-color: white;
+    width: 100%;
+}
+
+.card .image img {
+    height: 130px;
+}
+
+.card h4,
+.card p {
+    text-align: left;
+}
+
+
+.textPrice {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.todo {
+    width: 100%;
+    height: 100%;
+}

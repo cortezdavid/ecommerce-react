@@ -1,0 +1,93 @@
+.containerCart {
+    display: flex;
+    align-items: flex-start;
+}
+
+.containerCart svg {
+    font-size: 100px;
+}
+
+.Emptycart {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.Emptycart p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.containerItems {
+    width: 70%;
+}
+
+.cartItem {
+    background-color: #fff;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex;
+}
+
+.cartItem img {
+    width: 70px;
+    margin-right: 30px;
+}
+
+.cartItemPrice {
+    font-weight: 700;
+}
+
+.totalPrice {
+    width: 30%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.totalPrice h3 {
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.totalPrice .price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalPrice .price span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btnBuy,
+.btnDelete {
+    font-weight: 700;
+    font-size: 16px;
+    width: 100%;
+    color: #fff;
+    transition: 400ms;
+}
+
+.btnBuy {
+    background-color: #4CAF50;
+    margin: 20px 0;
+}
+
+.btnDelete {
+    background-color: #ff5757;
+}
+
+.btnBuy:hover {
+    background-color: #17811a;
+}
+
+.btnDelete:hover {
+    background-color: #ff3737;
+}
