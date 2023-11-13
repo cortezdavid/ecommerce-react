@@ -6,7 +6,7 @@ import './NavBar.css'
 const navBar = ({ cartProducts }) => {
 
   const productCounter = () => {
-    return cartProducts.reduce((acum, Item) => acum += Item.cant, 0)
+    return cartProducts.reduce((acum, item) => acum += item.cant, 0)
   }
 
   return (
@@ -16,7 +16,7 @@ const navBar = ({ cartProducts }) => {
         <div className='menuList'>
           <li><Link to={"/"}>Products</Link></li>
           <li><Link to={"/cart"}><BsCart4 className='cart' /></Link></li>
-          <p className='counter'>{productCounter()}</p>
+          <p>{productCounter()}</p>
         </div>
       </ul>
     </nav>
@@ -24,3 +24,7 @@ const navBar = ({ cartProducts }) => {
 }
 
 export default navBar
+
+//el componente navBar muestra la barra de navegación
+//recibe como prop el array de productos dentro del carrito, para luego
+//  la función productCounter cuente el total de elementos en él y que se muestre

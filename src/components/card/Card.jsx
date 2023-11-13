@@ -14,8 +14,10 @@ const Card = ({ id, title, img, price }) => {
         </div>
       </Link>
     </div>
-
   )
 }
 
 export default Card
+
+//traigo como props id, title, img y price para crear un card con los datos recibidos
+//el card esta envuelto por un Link de react-router-dom que redirige a los detalles del producto

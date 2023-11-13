@@ -33,3 +33,9 @@ function App() {
 }
 
 export default App;
+
+//importamos libreiras, hook y componentes.
+//utilizamos el useState para gestionar el estado de 'cartProduct', que guardara los productos selecciondos dentro de un arrray
+//la funcion 'addToCart' recibe un producto y busca si hay otro producto con ese nombre,
+//   utilizo el findIndex para eso, asi luego me ayudara para actualizar la cantidad de un producto repetido
+//defino las rutas de navegacion y sus props necesiarios 

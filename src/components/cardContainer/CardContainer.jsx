@@ -3,7 +3,7 @@ import Card from '../card/Card';
 import Loading from '../loading/Loading';
 import './CardContainer.css'
 
-const CardContainer = ({ addToCart }) => {
+const CardContainer = () => {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -37,3 +37,7 @@ const CardContainer = ({ addToCart }) => {
 }
 
 export default CardContainer
+
+//uso useEffect para llamar a la api y guardar los datos recibidos
+//muestro un Loading miestras se carga los datos
+//luego mapeo el array de la api para crear una instancia del componente Card con cada producto

@@ -1,4 +1,3 @@
-import React from 'react'
 import './Loading.css'
 
 const Loading = () => {
@@ -11,3 +10,5 @@ const Loading = () => {
 }
 
 export default Loading
+
+//icono del 'cargando' que se muestra mientras se obtiene la informacion de la api

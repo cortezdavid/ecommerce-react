@@ -64,3 +64,8 @@ const Cart = ({ cartProducts, deleteCart }) => {
 }
 
 export default Cart
+
+//uso como props cartProduct que me trae el array de productos y deleteCart que me trae el setCartProducts para modificarlo a []
+//utilizo la librería sweetalert2 junto con sweetalert2-react-content para mostrar alertas de
+//  "compra hecha" y "borrar carrito" a sus botones correspondiente
+//pregunto si el carrito esta vacio, dependiendo el valor muestro el carrito vacio o la lista de productos y el precio total

@@ -7,13 +7,12 @@ import './Details.css'
 const Details = ({ addToCart }) => {
   const [selectedProduct, setSelectedProduct] = useState([])
   const [loanding, setLoanding] = useState(true)
-  const [rating, setRating] = useState(0)
   const { id } = useParams()
 
   useEffect(() => {
     fetch(`https://fakestoreapi.com/products/${id}`)
       .then(res => res.json())
-      .then(data => { setSelectedProduct(data); setRating(data.rating.rate) })
+      .then(data => { setSelectedProduct(data) })
       .finally(() => setLoanding(false))
   }, [id])
 
@@ -31,7 +30,7 @@ const Details = ({ addToCart }) => {
               </div>
               <div className="detailDescription" >
                 <h2>{selectedProduct.title}</h2>
-                <div className="cardStar" style={{ '--rating': rating }}>
+                <div className="cardStar" style={{ '--rating': selectedProduct.rating.rate }}>
                   <p>{selectedProduct.rating.rate}</p>
                   <div className="rating"></div>
                 </div>
@@ -62,3 +61,9 @@ const Details = ({ addToCart }) => {
 }
 
 export default Details
+
+//este componente se encarga de mostrar los detalles de un producto especifico.
+//como prop, se pasa la funcion 'addToCart', para agregarle al borton 'agregar al carrito',
+//  que guarda un objeto con el nombre, imagen y precio
+//utilizo el useParams para recibir el id del producto seleccionado y traer la informacion del producto con la api
+//muestro el componente Loanding mientras espera la respuesta de la api y al finalizar muestro la tarjeta del producto
